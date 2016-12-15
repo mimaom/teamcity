@@ -1,0 +1,69 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <name>teamcity</name>
+    <groupId>dk.openminds.teamcity</groupId>
+    <artifactId>teamcity</artifactId>
+    <version>1.0.0-SNAPSHOT</version>
+    <packaging>jar</packaging>
+
+    <properties>
+        <!-- **************** -->
+        <!-- Plugins versions -->
+        <!-- **************** -->
+        <version.antrun.plugin>1.4</version.antrun.plugin>
+        <version.buildnumber.plugin>1.0-beta-4</version.buildnumber.plugin>
+        <version.compiler.plugin>2.3.2</version.compiler.plugin>
+        <version.dependency.plugin>2.1</version.dependency.plugin>
+        <version.deploy.plugin>2.7</version.deploy.plugin>
+        <version.ear.plugin>2.6</version.ear.plugin>
+        <version.eclipse.plugin>2.8</version.eclipse.plugin>
+        <version.ejb.plugin>2.3</version.ejb.plugin>
+        <version.enforcer.plugin>1.0</version.enforcer.plugin>
+        <version.exec.plugin>1.2</version.exec.plugin>
+        <version.install.plugin>2.3.1</version.install.plugin>
+        <version.jboss-packaging.plugin>2.2</version.jboss-packaging.plugin>
+        <version.jar.plugin>2.3.1</version.jar.plugin>
+        <version.javadoc.plugin>2.8</version.javadoc.plugin>
+        <version.release.plugin>2.2.1</version.release.plugin>
+        <version.resources.plugin>2.3</version.resources.plugin>
+        <version.site.plugin>2.1</version.site.plugin>
+        <version.source.plugin>2.1.2</version.source.plugin>
+        <version.surefire.plugin>2.4.3</version.surefire.plugin>
+
+        <!-- **************************************** -->
+        <!-- Dependency versions                      -->
+        <!-- **************************************** -->
+        <version.junit.dependency>4.8.2</version.junit.dependency>
+        <version.log4j.dependency>1.2.16</version.log4j.dependency>
+        <version.slf4j.dependency>1.6.1</version.slf4j.dependency>
+        <version.mockito.dependency>1.8.5</version.mockito.dependency>
+
+        <!-- ************** -->
+        <!-- Build settings -->
+        <!-- ************** -->
+        <!-- Cross plugins settings -->
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+        <!-- maven-compiler-plugin -->
+        <maven.compiler.target>1.8</maven.compiler.target>
+        <maven.compiler.source>1.8</maven.compiler.source>
+        <maven.compiler.showDeprecation>true</maven.compiler.showDeprecation>
+        <maven.compiler.showWarnings>true</maven.compiler.showWarnings>
+        <maven.compiler.optimize>true</maven.compiler.optimize>
+        <!-- maven-enforcer-plugin -->
+        <maven.min.version>2.2</maven.min.version>
+        <jdk.min.version>${maven.compiler.source}</jdk.min.version>
+        <quiet>true</quiet>
+    </properties>
+
+    <dependencies>
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <version>${version.junit.dependency}</version>
+            <scope>test</scope>
+        </dependency>
+    </dependencies>
+
+</project>
